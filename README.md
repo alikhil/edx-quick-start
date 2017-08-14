@@ -45,5 +45,7 @@ Update following strings in `cms.env.json` and `lms.env.json`
 ### Links
 
 [Troubles with uploading grades to S3](https://groups.google.com/forum/#!topic/openedx-ops/uyf2kyVPyGQ)
+
 [Steps to upload file with OpenAssessment to Amazon AWS](https://community.bitnami.com/t/steps-to-upload-file-with-openassessment-to-amazon-aws/44863)
+
 [Configuring SMTP](https://stackoverflow.com/questions/22569426/how-can-i-config-open-edx-production-stack-smtp-settings)
