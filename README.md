@@ -5,6 +5,7 @@ Here I will describe steps that I made to make edx be configured as to be used i
 Before, make sure that your machine meet hardware requirements and that it supports nested virtualization(if you installing it on other VM). 
 1. Follow [installation tutorial](http://edx.readthedocs.io/projects/edx-installing-configuring-and-running/en/latest/installation/fullstack/index.html).
 2. Set AWS S3 settings. 
+3. Configure nginx/apache
 
 #### Setting AWS S3
 
@@ -40,7 +41,13 @@ Update following strings in `cms.env.json` and `lms.env.json`
     }
 ```
 
-[Configure other buckets](https://openedx.atlassian.net/wiki/display/OpenOPS/Use+AWS+for+Data+Storage). 
+[Set other bucket names](https://openedx.atlassian.net/wiki/display/OpenOPS/Use+AWS+for+Data+Storage) for course import, file upload etc. 
+
+#### Configuring nginx/apache
+
+Setup redirect to your vagrant box for ports 80 and 18010 (lms + cms).
+
+Don't forget to [setup maximum body size!](https://craftcms.stackexchange.com/questions/2328/413-request-entity-too-large-error-with-uploading-a-file).
 
 ### Links
 
